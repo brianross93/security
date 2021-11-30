@@ -22,8 +22,8 @@ def index():
     Once you've found at least two (2) exploits, share your findings with a peer.
     Finally, fix this code so that this route is no longer exploitable.
     """
-    exploit = request.args.get('exploit')
-    rendered_template = render_template("app.html", exploit=exploit)
+    exploit = request.args.get.to('exploit')
+    rendered_template = render_template("app.html", exploit=exploit.to_string())
 
     try:
         render_template_string(rendered_template)
